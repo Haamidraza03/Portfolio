@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+.bdy{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.btn{
+    border:1px solid blueviolet !important;
+}
+
+.btn:hover{
+    background-color: blueviolet !important;
+    color:white !important;
+}
+
+.me{
+    color:blueviolet !important;
+}
+
+.back{
+    background-color: blueviolet !important;
+}
+
+a:hover{
+    color:blueviolet !important;
+}

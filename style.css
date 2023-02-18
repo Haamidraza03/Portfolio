@@ -24,3 +24,7 @@
 a:hover{
     color:blueviolet !important;
 }
+
+a{
+    text-decoration: none !important;
+}

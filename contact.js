@@ -28,6 +28,17 @@ function check()
             window.location.href='./contact.html'
         }) 
     }
+    else if(Name.length<=1)
+    {
+        alert('Please give a valid Name.')
+    }
+    else if(Phone<8234567890)
+    {
+        alert('Please give a Valid Phone Number.')
+    }
+    else if(Query.length<=1){
+        alert('Your message is too short.')
+    }
     else{
         alert('Please fill all Details.')
     }

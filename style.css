@@ -2,6 +2,7 @@
 
 .bdy{
     font-family: 'Poppins', sans-serif !important;
+    overflow-x: hidden;
 }
 
 .btn{

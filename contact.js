@@ -12,7 +12,7 @@ function check()
         query:Query
     }
 
-    if(Name.length>1 && Email.length>10 && Phone>8234567890 && Query.length>1)
+    if(Name.length>1 && Email.length>10 && Phone>7012345689 && Query.length>1)
     {
         fetch('https://portfolio-a5c8d-default-rtdb.firebaseio.com/user.json',
         {
@@ -32,7 +32,7 @@ function check()
     {
         alert('Please give a valid Name.')
     }
-    else if(Phone<8234567890)
+    else if(Phone<7012345689)
     {
         alert('Please give a Valid Phone Number.')
     }

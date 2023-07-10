@@ -28,6 +28,9 @@ function check()
             window.location.href='./contact.html'
         }) 
     }
+    else if(Name.length<1 && Email.length<10 && Phone<7012345689 && Query.length<1){
+        alert('Please fill all Details.')
+    }
     else if(Name.length<=1)
     {
         alert('Please give a valid Name.')
@@ -38,8 +41,5 @@ function check()
     }
     else if(Query.length<=1){
         alert('Your message is too short.')
-    }
-    else{
-        alert('Please fill all Details.')
     }
 }

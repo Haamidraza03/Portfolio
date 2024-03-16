@@ -45,3 +45,9 @@ a{
 .par{
     text-align: justify !important;
 }
+
+@media (max-width:425px){
+    #yc{
+        padding-top: 0px !important;
+    }
+}

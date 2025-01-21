@@ -22,6 +22,7 @@
      crossorigin="anonymous"></script>
   </head>
   <body class="bdy">
+    <b><button id="scrollToTopBtn" title="Go to top" style="font-size: 25px;">&#8679;</button></b>
     <nav class="navbar navbar-expand-lg bg-body-tertiary py-2" style="position:sticky; top:0px; z-index:2;">
         <div class="container-fluid">
           <img src="./images/mylogo.png" alt="" class="img-fluid rounded-circle" width="40"><a class="navbar-brand fs-4 ms-1" style="color:rgb(0, 178, 248);" href="#">PortFolio</a>
@@ -470,6 +471,27 @@
       document.addEventListener('contextmenu', function(e) {
         e.preventDefault();
       });
+    </script>
+    <script>
+      const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+// Show or hide the button based on scroll position
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) { // Show the button after scrolling 200px
+        scrollToTopBtn.style.display = 'block';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+});
+
+// Scroll to the top smoothly when the button is clicked
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
     </script>
   </body>
 </html>

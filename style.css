@@ -17,7 +17,28 @@
     border-radius: 10px;
 }
 
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    z-index: 99; /* Ensure it appears above other elements */
+    background-color: white; /* Button color */
+    color: rgb(53, 197, 222);
+    border: none;
+    border-radius: 50%;
+    padding: 6px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
+#scrollToTopBtn:hover {
+    background-color: #429dff; /* Darker shade on hover */
+    transform: scale(1.1); /* Slightly larger on hover */
+    color: white;
+}
 
 .btn{
     border:1px solid rgb(0, 178, 248) !important;
